@@ -7,6 +7,18 @@
     <title>Document</title>
 </head>
 <body>
+    <script src="script.js" defer></script>
     <h1>welcome!!</h1>
+    <div className="photo-box">
+        <!--.docx 파일을 받기 위한 accept 값 주의-->
+        <!--accept를 , application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document
+        로 해야 할 수도 있음 -->
+        <input 
+            class="register-file" 
+            type="file" 
+            accept=".docx" 
+            placeholder="Do you have a docx?"/>
+        <button class="submit-btn">확인</button>
+    </div>
 </body>
 </html>
